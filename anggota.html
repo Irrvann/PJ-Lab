@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Anggota Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'pixel';
+            src: url('assets/fonts/Pixellari.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-600 p-6">
+    <h1 class="font-bold text-4xl mt-20 mb-8 text-white text-center font-[pixel]">Pembagian PJ Masing-Masing Lab Komputer</h1>
+
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-8 bg-white rounded-lg shadow-lg w-full max-w-7xl mb-20">
+        <div class="w-full p-6 bg-blue-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 1</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Abdul')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Meli')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Erik')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Erisa')">Klik untuk lihat</div>
+            </div>
+        </div>
+
+        <div class="w-full p-6 bg-green-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 2</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Furqon')">Klik untuk lihat</div>
+            </div>
+        </div>
+
+        <div class="w-full p-6 bg-red-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 3</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Nadya')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Faza')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Karina')">Klik untuk lihat</div>
+            </div>
+        </div>
+
+        <div class="w-full p-6 bg-yellow-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 4</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Indri')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Tyo')">Klik untuk lihat</div>
+            </div>
+        </div>
+
+        <div class="w-full p-6 bg-purple-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 5</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Irvan')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Fauzi')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Agitha')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Putri')">Klik untuk lihat</div>
+            </div>
+        </div>
+
+        <div class="w-full p-6 bg-pink-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 6</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Fithnan')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Dwi')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Albar')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Nisa')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama2(this, 'Ubai')">Klik untuk lihat</div>
+            </div>
+        </div>
+
+
+        <div class="w-full p-6 bg-teal-500 text-white text-center rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold font-[pixel]">Lab 7</h2>
+            <div class="mt-4 space-y-2">
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Dhio')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama(this, 'Alif')">Klik untuk lihat</div>
+                <div class="w-full p-4 bg-gray-800 text-white rounded-lg cursor-pointer"
+                    onclick="pencetNama1(this, 'Ayu')">Klik untuk lihat</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function pencetNama(element, name) {
+            element.innerHTML = `<span class='text-lg font-bold'>${name}</span>`;
+            element.classList.remove('bg-gray-800', 'text-white');
+            element.classList.add('bg-white', 'text-black', 'border', 'border-gray-300', 'font-[pixel]');
+        }
+
+        function pencetNama1(element, name) {
+            element.innerHTML = `<span class='text-lg font-bold'>${name}</span>`;
+            element.classList.remove('bg-gray-800', 'text-white');
+            element.classList.add('bg-yellow-200', 'text-black', 'border', 'border-gray-300', 'font-[pixel]');
+        }
+
+        function pencetNama2(element, name) {
+            element.innerHTML = `<span class='text-lg font-bold'>${name}</span>`;
+            element.classList.remove('bg-gray-800', 'text-white');
+            element.classList.add('bg-green-200', 'text-black', 'border', 'border-gray-300', 'font-[pixel]');
+        }
+    </script>
+
+</body>
+
+
+</html>
